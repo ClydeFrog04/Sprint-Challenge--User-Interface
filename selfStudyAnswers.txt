@@ -1,0 +1,13 @@
+1. Sematic html is organising and writing html in a way that is easy to read and maintain.
+
+
+2. Block will display items on separate lines, while inline will display items next to eachother on the same line.
+
+
+3. Margin, border, padding and content.
+
+
+4. Cross axis
+
+
+5. Git is valuable for a number of reasons. It tracks all changes made and allows reverting to previous versions, handles merging so multiple people can work at the same time without clashing with each other, and it allows branch so you can test different features without breaking everything. These are but a few of the benefits to gitting.

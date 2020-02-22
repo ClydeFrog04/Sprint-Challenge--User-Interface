@@ -12,39 +12,39 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
+    display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
 }
 ol, ul {
-	list-style: none;
+    list-style: none;
 }
 blockquote, q {
-	quotes: none;
+    quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+    content: '';
+    content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 * {
@@ -66,9 +66,21 @@ p {
     line-height: 1.4;
 }
 
+a{/*Something I think should be included in our css reset*/
+    text-decoration: none;
+    color: black;
+}
+
 .container {
     width: 800px;
     margin: 0 auto;
+}
+
+.topbar header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4% 0;
 }
 
 .top-content {
@@ -81,8 +93,7 @@ p {
 
 .top-content .text-container {
     width: 48%;
-    padding: 0 1%;
-    padding-bottom: 20px;  
+    padding: 2% 1% 20px;
 }
 
 .middle-content {
@@ -111,6 +122,49 @@ p {
     align-items: center;
     justify-content: center;
 }
+
+/*box colors*/
+.middle-content .boxes .box:nth-child(1){
+    color: white;
+    background-color: teal;
+}
+.middle-content .boxes .box:nth-child(2){
+    color: white;
+    background-color: gold;
+}
+.middle-content .boxes .box:nth-child(3){
+    color: white;
+    background-color: cadetblue;
+}
+.middle-content .boxes .box:nth-child(4){
+    color: white;
+    background-color: coral;
+}
+.middle-content .boxes .box:nth-child(5){
+    color: white;
+    background-color: crimson;
+}
+.middle-content .boxes .box:nth-child(6){
+    color: white;
+    background-color: forestgreen;
+}
+.middle-content .boxes .box:nth-child(7){
+    color: white;
+    background-color: darkorchid;
+}
+.middle-content .boxes .box:nth-child(8){
+    color: white;
+    background-color: hotpink;
+}
+.middle-content .boxes .box:nth-child(9){
+    color: white;
+    background-color: indigo;
+}
+.middle-content .boxes .box:nth-child(10){
+    color: white;
+    background-color: dodgerblue;
+}
+
 
 .bottom-content {
     display: flex;
@@ -143,4 +197,39 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+
+
+/*About page*/
+
+.top-content.about-page .textContainer{
+    margin: 2%;
+}
+
+.middle-content.about-page{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.boxContent{
+    width: 48%;
+    border-bottom: 1px dashed black;
+    margin-bottom: 5%;
+
+}
+
+.middle-content.about-page{
+    border-bottom: 0;
+}
+
+.middle-content.about-page .learnMore {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 7px;
+    width: 25%;
+    height: 8%;
+    margin-bottom: 2%;
 }
